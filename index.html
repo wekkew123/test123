@@ -8,31 +8,94 @@
 		<meta name="author" content="Jun Kang">
 		<meta name="description" content="practicing for webpage">
 		<meta name="robots" content="all">
-		  <style>
-		  	body { padding: 0px; margin: 0px; }
-			.jb-box { width: 100%; height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
-			video { width: 100%; }
-			.jb-text { position: absolute; top: 50%; width: 100%; }
-			.jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+		<style>
+			body
+	{
+		margin:0;
+		padding:0;
+		text-align:center;
+		font-family:arial;
+		font-size:12px;
+		color:white;
+	}
+	
+	#main
+	{
+		padding:3em 2em;
+		background-color:#333;	
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-top:-150px;
+		margin-left:-150px;
+		width:340px;
+		height:110px;
+	  -moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+	}
+	
+	form
+	{
+		margin:2em 0;
+	}
+	
+	h2
+	{
+		margin:0;
+		padding:0;
+		font-size:1.6em;
+		color: #000;
+	}
+	
+	a:link,a:visited
+	{
+		color:#fff;
+		text-decoration:underline;
+	}
+	
+	small a:link
+	{
+		text-decoration:none;
+	}
+	body { padding: 0px; margin: 0px; }
+      .jb-box { width: 100%; height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
+      video { width: 100%; }
+     
 		  </style>
 	</head>
 	<body id "test-main">
-		<div class="page-wrapper">
-			<section class="intro" id="zen-intro">
-				<header role="banner">
-					<h1>TEST</h1>
-				</header>
-			</section>
-		</div>
-		<div class="jb-box">
-			<video muted autoplay loop>
-			  <source src="testvideo.mp4" type="video/mp4">
-			  <strong>Your browser does not support the video tag.</strong>
-			</video>
-			<div class="jb-text">
-			  <p>Lorem Ipsum Dolor</p>
-			</div>
-		  </div>
+		<header>
+			<h2>Test</h2>
+		</header>
+		<nav>
+		<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+				<div class="jb-box">
+					<video muted autoplay loop>
+					  <source src="testvideo.mp4" type="video/mp4">
+					  <strong>Your browser does not support the video tag.</strong>
+					</video>
+				  </div>
+	  </div>
 
+	  <div id="main">
+
+		  <h2>
+			  웹사이트찍먹중
+		  </h2>
+
+		  <p>
+			  본 페이지는 백수의 웹사이트 찍먹을 위한 장소입니다 <a href="https://pixabay.com/videos/network-loop-energy-technology-12716/" target="_blank">배경동영상reference</a> 
+		  </p>
+
+		  <p>
+			  <small>2021 july 29 <a href="https://github.com/wekkew123/test123">github</a></small>
+		  </p>
+
+	  </div>
+	</nav>
+	  <footer>
+		  <footer>Test</footer>
+	  </footer>
 	</body>
 </html>
